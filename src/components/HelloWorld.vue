@@ -2,7 +2,10 @@
 import { ref } from 'vue'
 
 defineProps<{ msg: string }>()
-
+function foo() {
+console.log('Hello,foo') // 这里故意不缩进
+}
+foo();
 const count = ref(0)
 </script>
 

@@ -3,4 +3,5 @@
 
 # npx lint-staged
 
-echo "Hello,world"
+# echo "Hello,world"
+npm run format
