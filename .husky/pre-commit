@@ -4,4 +4,4 @@
 # npx lint-staged
 
 # echo "Hello,world"
-npm run format
+pnpm lint

@@ -3,9 +3,12 @@ import { ref } from 'vue';
 
 defineProps<{ msg: string }>();
 function foo() {
-console.log('Hello,foo'); // 这里故意不缩进
+  console.log('Hello,foo'); // 这里故意不缩进
+  return "aaa"
 }
-foo();
+const name = foo();
+console.log(name);
+
 const count = ref(0);
 </script>
 
