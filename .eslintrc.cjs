@@ -31,6 +31,7 @@ module.exports = {
         "vue"
     ],
     "rules": {
+        "comma-spacing": ["error", { "before": false, "after": true }],
         "vue/multi-word-component-names": 0
     }
 }
