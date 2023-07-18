@@ -3,5 +3,5 @@
 
 # echo "Hello,world"
 # pnpm format
-pnpm lint
-# npx lint-staged
+# pnpm lint
+npx lint-staged

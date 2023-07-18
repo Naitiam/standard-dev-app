@@ -2,11 +2,11 @@
 import { ref } from 'vue';
 
 defineProps<{ msg: string }>();
-function foo(a,b) {
+function foo(a: number, b: number) {
   console.log('Hello,foo'); // 这里故意不缩进
-  return a+b
+  return a + b;
 }
-const name = foo(1,7);
+const name = foo(1, 7);
 console.log(name);
 
 const count = ref(0);
