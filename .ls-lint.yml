@@ -1,0 +1,23 @@
+ls:
+  .js: kebab-case # 对所有 JS 文件使用 kebab-case 形式
+  .ts: kebab-case | camelCase | PascalCase # 对所有 TS 文件使用 kebab-case 或者 camelCase 或者 PascalCase 形式
+  .d.ts: kebab-case # 对所有 .d.ts 文件使用 kebab-case 形式
+
+  packages/src:
+    .dir: camelCase # 对当前目录和所有子目录使用 camelCase
+    .js: camelCase # 对 packages/src 下的 JS 文件使用 camelCase，会覆盖上面的全局配置
+
+  packages/*/src: # * 号匹配除了目录分隔符以外的任意字符
+    .js: kebab-case
+
+  packages/**/templates: # ** 号匹配包含目录分隔符以外的任意字符
+    .html: kebab-case
+
+  packages/*/{src,tests}: # 匹配 package 下下一级目录中的 src 或 tests 目录中的文件
+    .js: kebab-case
+
+ignore:
+  - .git # 忽略 .git 目录
+  - node_modules # 忽略 node_modules 目录
+  - .vscode
+  - vite.config.ts

@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
-
 # echo "Hello,world"
 # pnpm format
 # pnpm lint
 npx lint-staged
+npx --no-install ls-lint
